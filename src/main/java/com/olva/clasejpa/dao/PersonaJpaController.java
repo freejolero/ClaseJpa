@@ -32,6 +32,12 @@ public class PersonaJpaController implements Serializable {
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
     }
+    
+    public List<Persona> findByNombre(String nombre){
+        return getEntityManager().createNamedQuery("Persona.findByNombre")
+                .setParameter(1, nombre)
+                .getResultList();
+    }
 
     public void create(Persona persona) {
         EntityManager em = null;

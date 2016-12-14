@@ -5,10 +5,10 @@
     <class>com.olva.clasejpa.be.Area</class>
     <class>com.olva.clasejpa.be.Persona</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/capacitacion?zeroDateTimeBehavior=convertToNull"/>
-      <property name="javax.persistence.jdbc.user" value="root"/>
-      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@10.10.10.110:1521:bdolva"/>
+      <property name="javax.persistence.jdbc.password" value="valicha"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.user" value="capacitacion"/>
     </properties>
   </persistence-unit>
 </persistence>
